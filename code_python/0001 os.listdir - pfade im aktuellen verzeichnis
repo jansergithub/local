@@ -1,0 +1,28 @@
+__1.__
+
+from os import listdir
+
+train_data_list=[] for f in listdir('data/'):
+
+gg = len(listdir('data'))
+
+files = listdir('data')
+
+f= random.choice(files)  
+  
+files.remove(f)  
+
+__2.__
+
+import os 
+for filename in os.listdir():  
+    print(filename)  
+ 
+would only show the files in the opened project folder, so you need  
+ 
+import sys  
+ 
+print(sys.executable)  
+ 
+which is now documented here: https://docs.python.org/3/library/sys.html  
+[stackoverflow.com   /questions/2589711/find-full-path-of-the-python-interpreter]  
